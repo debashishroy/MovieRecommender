@@ -17,7 +17,7 @@ def main():
     os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
     api_service_name = "youtube"
     api_version = "v3"
-    developer_key="AIzaSyAEoOSkG60fa3h09UdNPV0rIcavVMHj3tQ"
+    developer_key=""
     youtube = googleapiclient.discovery.build(api_service_name, api_version, developerKey=developer_key)
     for vdoId in videoIDs:
         orig_stdout = sys.stdout
